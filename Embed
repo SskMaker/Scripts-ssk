@@ -1,0 +1,14 @@
+#embed
+
+@client.command()
+  msg = f'{ctx.author.mention} Veja os comandos abaixo
+  embed = discord.Embed(
+    title = 'Titulo'
+    description = 'descrição'
+    colour = discord.Colour.blue()
+)
+
+embed.set_footer(text='footer')
+
+await ctx.send(msg)
+await ctx.send(embed = embed)
